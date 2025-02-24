@@ -1,4 +1,4 @@
-package org.example.apibarbeariamanodi.Configuration;
+package org.example.apibarbeariamanodi.app.configuration;
 
 import io.swagger.v3.oas.models.OpenAPI;
 import io.swagger.v3.oas.models.info.Info;
@@ -13,9 +13,9 @@ public class SwaggerConfig {
     public OpenAPI customOpenAPI() {
         return new OpenAPI()
                 .info(new Info()
-                        .title("API - Barbearia Mano Di") // Nome da API
-                        .version("1.0.0") // Versão
-                        .description("API para gerenciamento de agendamentos em uma barbearia.") // Descrição
+                        .title("API - Barbearia Mano Di")
+                        .version("1.0.0")
+                        .description("API para gerenciamento de agendamentos em uma barbearia.")
                         .license(new License().name("Apache 2.0").url("https://www.apache.org/licenses/LICENSE-2.0")));
     }
 }

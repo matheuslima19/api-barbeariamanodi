@@ -8,5 +8,5 @@ import java.util.Optional;
 
 public interface IAgendaBarbeiroRepository extends JpaRepository<AgendaBarbeiro, Integer> {
     Optional<AgendaBarbeiro> findByDiaSemana(DiaSemana diaSemana);
-
+    Optional<AgendaBarbeiro> findById (Integer id);
 }

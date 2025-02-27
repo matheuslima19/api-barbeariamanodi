@@ -1,6 +1,6 @@
-package org.example.apibarbeariamanodi.app.dtos;
+package org.example.apibarbeariamanodi.app.dtos.AgendaBarbeiroDTO;
 
-public class AgendaBarbeiroDTO {
+public class UpdateAgendaBarbeiroDTO {
     private Integer id;
     private Integer idBarbeiro;
     private String diaSemana;
@@ -8,17 +8,6 @@ public class AgendaBarbeiroDTO {
     private String horarioFim;
     private Boolean ativo;
 
-    public AgendaBarbeiroDTO() {
-    }
-
-    public AgendaBarbeiroDTO(Integer id, Integer idBarbeiro, String diaSemana, String horarioInicio, String horarioFim, Boolean ativo) {
-        this.id = id;
-        this.idBarbeiro = idBarbeiro;
-        this.diaSemana = diaSemana;
-        this.horarioInicio = horarioInicio;
-        this.horarioFim = horarioFim;
-        this.ativo = ativo;
-    }
 
     public Integer getId() {
         return id;
@@ -66,17 +55,5 @@ public class AgendaBarbeiroDTO {
 
     public void setAtivo(Boolean ativo) {
         this.ativo = ativo;
-    }
-
-    @Override
-    public String toString() {
-        return "AgendaBarbeiroDTO{" +
-                "id=" + id +
-                ", idBarbeiro=" + idBarbeiro +
-                ", diaSemana='" + diaSemana + '\'' +
-                ", horarioInicio='" + horarioInicio + '\'' +
-                ", horarioFim='" + horarioFim + '\'' +
-                ", ativo=" + ativo +
-                '}';
     }
 }

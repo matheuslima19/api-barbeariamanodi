@@ -8,6 +8,8 @@ import org.example.apibarbeariamanodi.domain.repositories.IClienteRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.Optional;
+
 @Service
 public class ServiceHelper {
 
@@ -18,11 +20,11 @@ public class ServiceHelper {
     private IBarbeiroRepository barbeiroRepository;
 
     public Cliente getValidCliente(String email) {
-        Cliente cliente = clienteRepository.findByEmail(email);
+        Optional<Cliente> cliente = clienteRepository.findByEmail(email);
         if (cliente == null) {
             throw new RecursoNaoEncontradoException("Cliente não encontrado");
         }
-        return cliente;
+        return cliente.get();
     }
 
     public Barbeiro getValidBarbeiro(int id) {

@@ -2,7 +2,7 @@ package org.example.apibarbeariamanodi.app.services;
 
 import lombok.AllArgsConstructor;
 import lombok.NoArgsConstructor;
-import org.example.apibarbeariamanodi.app.dtos.AgendaBarbeiroDTO;
+import org.example.apibarbeariamanodi.app.dtos.AgendaBarbeiroDTO.AgendaBarbeiroDTO;
 import org.example.apibarbeariamanodi.app.mappers.AgendaBarbeiroMapper;
 import org.example.apibarbeariamanodi.domain.entities.AgendaBarbeiro;
 import org.example.apibarbeariamanodi.domain.repositories.IAgendaBarbeiroRepository;

@@ -1,6 +1,6 @@
 package org.example.apibarbeariamanodi.app.controllers;
 
-import org.example.apibarbeariamanodi.app.dtos.AgendaBarbeiroDTO;
+import org.example.apibarbeariamanodi.app.dtos.AgendaBarbeiroDTO.AgendaBarbeiroDTO;
 import org.example.apibarbeariamanodi.app.services.AgendaBarbeiroService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;

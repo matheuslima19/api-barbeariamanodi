@@ -1,6 +1,6 @@
 package org.example.apibarbeariamanodi.app.mappers;
 
-import org.example.apibarbeariamanodi.app.dtos.AgendaBarbeiroDTO;
+import org.example.apibarbeariamanodi.app.dtos.AgendaBarbeiroDTO.AgendaBarbeiroDTO;
 import org.example.apibarbeariamanodi.domain.entities.AgendaBarbeiro;
 import org.example.apibarbeariamanodi.domain.enums.DiaSemana;
 import org.springframework.stereotype.Component;

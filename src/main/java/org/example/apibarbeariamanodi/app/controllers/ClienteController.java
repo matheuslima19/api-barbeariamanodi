@@ -23,12 +23,6 @@ public class ClienteController {
     @Autowired
     private ClienteService clienteService;
 
-    @Autowired
-    private AuthenticationManager authenticationManager;
-
-    @Autowired
-    private TokenService tokenService;
-
     @PostMapping("/registrar")
     public ResponseEntity<ClienteDTO> registerCliente(@RequestBody CreateClienteDTO createClienteDTO) {
         ClienteDTO clienteDTO = clienteService.register(createClienteDTO);

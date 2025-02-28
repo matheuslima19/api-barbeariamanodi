@@ -1,6 +1,7 @@
 package org.example.apibarbeariamanodi.app.mappers;
 
 import org.example.apibarbeariamanodi.app.dtos.BarbeiroDTO.BarbeiroDTO;
+import org.example.apibarbeariamanodi.app.dtos.BarbeiroDTO.CreateBarbeiroDTO;
 import org.example.apibarbeariamanodi.domain.entities.Barbeiro;
 
 public class BarbeiroMapper {
@@ -18,12 +19,11 @@ public class BarbeiroMapper {
         return dto;
     }
 
-    public static Barbeiro toEntity(BarbeiroDTO dto) {
+    public static Barbeiro toEntity(CreateBarbeiroDTO dto) {
         if (dto == null) {
             return null;
         }
         Barbeiro barbeiro = new Barbeiro();
-        barbeiro.setId(dto.getId());
         barbeiro.setNome(dto.getNome());
         barbeiro.setEmail(dto.getEmail());
         barbeiro.setTelefone(dto.getTelefone());

@@ -22,6 +22,7 @@ public class ClienteService {
 
     @Autowired
     private TokenService tokenService;
+
     @Autowired
     private AuthenticationManager authenticationManager;
 
@@ -46,7 +47,7 @@ public class ClienteService {
 
         var usernamePasswordAuthenticationToken = new UsernamePasswordAuthenticationToken(loginClienteRequest.email(), loginClienteRequest.senha());
         var auth = authenticationManager.authenticate(usernamePasswordAuthenticationToken);
-        String token = tokenService.generateToken(cliente.get());
+        String token = tokenService.generateTokenCliente(cliente.get());
         return new LoginClienteResponseDTO(cliente.get().getId(), cliente.get().getNome(), cliente.get().getEmail(), token);
     }
 }
